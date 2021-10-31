@@ -153,5 +153,5 @@ echo '============================================='
 echo ""
 rm -f /root/setup.sh
 rm -f /root/.bash_history
-echo " Reboot 15 Sec, Setelah ON type menu"
+echo " Reboot 10 Sec, Setelah ON type menu"
 sleep 10
