@@ -1,6 +1,4 @@
 mkdir /var/lib/premium-script;
-clear
-echo -e "\e[1;32mEnter the VPS Subdomain Hostname, if not available, please click Enter"
 read -p "Hostname / Domain: " host
 echo $host > /root/domain
 wget https://raw.githubusercontent.com/irwanmohi/aidan-vpn/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
