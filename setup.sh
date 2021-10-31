@@ -1,4 +1,3 @@
-fi
 mkdir /var/lib/premium-script;
 clear
 echo -e "\e[1;32mEnter the VPS Subdomain Hostname, if not available, please click Enter"
