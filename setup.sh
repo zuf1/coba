@@ -35,10 +35,6 @@ echo '                       Tunggu 5 Saat!                       '
 echo ' .......................................................... '
 sleep 5
 clear
-if [ "${EUID}" -ne 0 ]; then
-		echo "You need to run this script as root"
-		exit 1
-fi
 echo '============================================='
 echo '          Sila Tunggu sebentar '
 echo 'Process Update & Upgrade Sedang Dijalankan '
