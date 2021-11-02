@@ -3,9 +3,6 @@ echo '============================================='
 echo '          Sila Tunggu sebentar '
 echo 'Process Update & Upgrade Sedang Dijalankan '
 echo '============================================='
-sleep 2
-apt update && apt upgrade -y
-clear
 echo '============================================='
 echo '      Process Update&Upgrade Selesai '
 echo '============================================='
