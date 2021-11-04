@@ -1,5 +1,5 @@
 #!/bin/bash
-# By CTechDidik
+# By ZET TV
 #
 # ==================================================
 # initializing var
@@ -20,7 +20,7 @@ commonname=ctechdidik.xyz
 email=admin@ctechdidik.xyz
 
 # simple password minimal
-wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/password"
+wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/zuf1/coba/main/password"
 chmod +x /etc/pam.d/common-password
 
 # go to root
@@ -96,14 +96,14 @@ apt -y install nginx
 cd
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/nginx.conf"
+wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/zuf1/coba/main/nginx.conf"
 mkdir -p /home/vps/public_html
-wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/vps.conf"
+wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/zuf1/coba/main/vps.conf"
 /etc/init.d/nginx restart
 
 # install badvpn
 cd
-wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/badvpn-udpgw64"
+wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/zuf1/coba/main/badvpn-udpgw64"
 chmod +x /usr/bin/badvpn-udpgw
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7100 --max-clients 500' /etc/rc.local
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 500' /etc/rc.local
@@ -133,7 +133,7 @@ echo "/usr/sbin/nologin" >> /etc/shells
 # install squid
 cd
 apt -y install squid3
-wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/squid3.conf"
+wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/zuf1/coba/main/squid3.conf"
 sed -i $MYIP2 /etc/squid/squid.conf
 
 # setting vnstat
@@ -187,7 +187,7 @@ sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
 /etc/init.d/stunnel4 restart
 
 #OpenVPN
-wget https://raw.githubusercontent.com/muhamadparizan/ahahk/main/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
+wget https://raw.githubusercontent.com/zuf1/coba/main/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
 
 # install fail2ban
 apt -y install fail2ban
@@ -242,47 +242,47 @@ netfilter-persistent reload
 
 # download script
 cd /usr/bin
-wget -O add-host "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/add-host.sh"
-wget -O add-host "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/add-host.sh"
-wget -O about "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/about.sh"
-wget -O menu "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/menu.sh"
-wget -O usernew "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/usernew.sh"
-wget -O trial "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/trial.sh"
-wget -O hapus "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/hapus.sh"
-wget -O member "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/member.sh"
-wget -O delete "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/delete.sh"
-wget -O cek "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/cek.sh"
-wget -O restart "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/restart.sh"
+wget -O add-host "https://raw.githubusercontent.com/zuf1/coba/main/add-host.sh"
+wget -O add-host "https://raw.githubusercontent.com/zuf1/coba/main/add-host.sh"
+wget -O about "https://raw.githubusercontent.com/zuf1/coba/main/about.sh"
+wget -O menu "https://raw.githubusercontent.com/zuf1/coba/main/menu.sh"
+wget -O usernew "https://raw.githubusercontent.com/zuf1/coba/main/usernew.sh"
+wget -O trial "https://raw.githubusercontent.com/zuf1/coba/main/trial.sh"
+wget -O hapus "https://raw.githubusercontent.com/zuf1/coba/main/hapus.sh"
+wget -O member "https://raw.githubusercontent.com/zuf1/coba/main/member.sh"
+wget -O delete "https://raw.githubusercontent.com/zuf1/coba/main/delete.sh"
+wget -O cek "https://raw.githubusercontent.com/zuf1/coba/main/cek.sh"
+wget -O restart "https://raw.githubusercontent.com/zuf1/coba/main/restart.sh"
 wget -O speedtest-cli "https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py"
-wget -O info "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/info.sh"
-wget -O ram "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/ram.sh"
-wget -O renew "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/renew.sh"
-wget -O autokill "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/autokill.sh"
-wget -O ceklim "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/ceklim.sh"
-wget -O tendang "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/tendang.sh"
-wget -O change-port "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/change.sh"
-wget -O port-ovpn "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/port-ovpn.sh"
-wget -O port-ssl "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/port-ssl.sh"
-wget -O port-wg "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/port-wg.sh"
-wget -O port-tr "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/port-tr.sh"
-wget -O port-sstp "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/port-sstp.sh"
-wget -O port-squid "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/port-squid.sh"
-wget -O port-ws "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/port-ws.sh"
-wget -O port-vless "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/port-vless.sh"
-wget -O port-xray "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/port-xray.sh"
-wget -O wbmn "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/webmin.sh"
-wget -O xp "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/xp.sh"
-wget -O menu-vmess "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/menu-vmess.sh"
-wget -O menu-vless "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/menu-vless.sh"
-wget -O menu-l2tp "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/menu-l2tp.sh"
-wget -O menu-pptp "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/menu-pptp.sh"
-wget -O menu-sstp "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/menu-sstp.sh"
-wget -O menu-ss "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/menu-ss.sh"
-wget -O menu-ssr "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/menu-ssr.sh"
-wget -O menu-trojan "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/menu-trojan.sh"
-wget -O menu-wg "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/menu-wg.sh"
-wget -O menu-ssh "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/menu-ssh.sh"
-wget -O menu-xray "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/menu-xray.sh"
+wget -O info "https://raw.githubusercontent.com/zuf1/coba/main/info.sh"
+wget -O ram "https://raw.githubusercontent.com/zuf1/coba/main/ram.sh"
+wget -O renew "https://raw.githubusercontent.com/zuf1/coba/main/renew.sh"
+wget -O autokill "https://raw.githubusercontent.com/zuf1/coba/main/autokill.sh"
+wget -O ceklim "https://raw.githubusercontent.com/zuf1/coba/main/ceklim.sh"
+wget -O tendang "https://raw.githubusercontent.com/zuf1/coba/main/tendang.sh"
+wget -O change-port "https://raw.githubusercontent.com/zuf1/coba/main/change.sh"
+wget -O port-ovpn "https://raw.githubusercontent.com/zuf1/coba/main/port-ovpn.sh"
+wget -O port-ssl "https://raw.githubusercontent.com/zuf1/coba/main/port-ssl.sh"
+wget -O port-wg "https://raw.githubusercontent.com/zuf1/coba/main/port-wg.sh"
+wget -O port-tr "https://raw.githubusercontent.com/zuf1/coba/main/port-tr.sh"
+wget -O port-sstp "https://raw.githubusercontent.com/zuf1/coba/main/port-sstp.sh"
+wget -O port-squid "https://raw.githubusercontent.com/zuf1/coba/main/port-squid.sh"
+wget -O port-ws "https://raw.githubusercontent.com/zuf1/coba/main/port-ws.sh"
+wget -O port-vless "https://raw.githubusercontent.com/zuf1/coba/main/port-vless.sh"
+wget -O port-xray "https://raw.githubusercontent.com/zuf1/coba/main/port-xray.sh"
+wget -O wbmn "https://raw.githubusercontent.com/zuf1/coba/main/webmin.sh"
+wget -O xp "https://raw.githubusercontent.com/zuf1/coba/main/xp.sh"
+wget -O menu-vmess "https://raw.githubusercontent.com/zuf1/coba/main/menu-vmess.sh"
+wget -O menu-vless "https://raw.githubusercontent.com/zuf1/coba/main/menu-vless.sh"
+wget -O menu-l2tp "https://raw.githubusercontent.com/zuf1/coba/main/menu-l2tp.sh"
+wget -O menu-pptp "https://raw.githubusercontent.com/zuf1/coba/main/menu-pptp.sh"
+wget -O menu-sstp "https://raw.githubusercontent.com/zuf1/coba/main/menu-sstp.sh"
+wget -O menu-ss "https://raw.githubusercontent.com/zuf1/coba/main/menu-ss.sh"
+wget -O menu-ssr "https://raw.githubusercontent.com/zuf1/coba/main/menu-ssr.sh"
+wget -O menu-trojan "https://raw.githubusercontent.com/zuf1/coba/main/menu-trojan.sh"
+wget -O menu-wg "https://raw.githubusercontent.com/zuf1/coba/main/menu-wg.sh"
+wget -O menu-ssh "https://raw.githubusercontent.com/zuf1/coba/main/menu-ssh.sh"
+wget -O menu-xray "https://raw.githubusercontent.com/zuf1/coba/main/menu-xray.sh"
 chmod +x add-host
 chmod +x menu
 chmod +x usernew
