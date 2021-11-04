@@ -1,6 +1,6 @@
 #!/bin/bash
 echo '============================================='
-echo '          Sila Tunggu sebentar '
+echo '          Silahkan Tunggu sebentar '
 echo 'Process Update & Upgrade Sedang Dijalankan '
 echo '============================================='
 sleep 2
@@ -12,7 +12,7 @@ echo '============================================='
 sleep 2
 clear
 echo '============================================='
-echo '        Process Seterusnya Sila Tunggu '
+echo '        Process Seterusnya Silahkan Tunggu '
 echo '============================================='
 sleep 2
 mkdir /etc/v2ray
@@ -20,7 +20,7 @@ mkdir /var/lib/premium-script;
 mkdir /var/lib/crot-script;
 clear
 echo '============================================='
-echo "Sila Masukkan DOMAIN, Jika TIADA KLIK Enter"
+echo "Silahkan Masukkan DOMAIN, Jika Tidak Punya KLIK Enter"
 echo '============================================='
 read -p "Hostname / Domain: " host
 echo "IP=$host" >> /var/lib/premium-script/ipvps.conf
@@ -30,38 +30,38 @@ clear
 echo '============================================='
 echo '        Installing SSH & OPENVPN '
 echo '============================================='
-wget https://raw.githubusercontent.com/muhamadparizan/ahahk/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/zuf1/coba/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 echo '============================================='
 echo '        Installing SSTP '
 echo '============================================='
-wget https://raw.githubusercontent.com/muhamadparizan/ahahk/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
+wget https://raw.githubusercontent.com/zuf1/coba/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 echo '============================================='
 echo '        Installing ssr '
 echo '============================================='
-wget https://raw.githubusercontent.com/muhamadparizan/ahahk/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
+wget https://raw.githubusercontent.com/zuf1/coba/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
 echo '============================================='
 echo '        Installing shadowsocksobfs '
 echo '============================================='
-wget https://raw.githubusercontent.com/muhamadparizan/ahahk/main/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
+wget https://raw.githubusercontent.com/zuf1/coba/main/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
 echo '============================================='
 echo '        Installing WIREGUARD '
 echo '============================================='
-wget https://raw.githubusercontent.com/muhamadparizan/ahahk/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
+wget https://raw.githubusercontent.com/zuf1/coba/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
 echo '============================================='
 echo '        Installing V2RAY '
 echo '============================================='
-wget https://raw.githubusercontent.com/muhamadparizan/ahahk/main/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
+wget https://raw.githubusercontent.com/zuf1/coba/main/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
 echo '============================================='
 echo '        Installing ipsec '
 echo '============================================='
-wget https://raw.githubusercontent.com/muhamadparizan/ahahk/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
+wget https://raw.githubusercontent.com/zuf1/coba/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 echo '        Installing XRAY '
 echo '============================================='
-wget https://raw.githubusercontent.com/muhamadparizan/ahahk/main/install-xray.sh && chmod +x install-xray.sh && screen -S v2ray ./install-xray.sh
+wget https://raw.githubusercontent.com/zuf1/coba/main/install-xray.sh && chmod +x install-xray.sh && screen -S v2ray ./install-xray.sh
 echo '============================================='
 echo '        Installing Websocket '
 echo '============================================='
-wget https://raw.githubusercontent.com/muhamadparizan/ahahk/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+wget https://raw.githubusercontent.com/zuf1/coba/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 
 
 rm -f /root/ssh-vpn.sh
@@ -75,17 +75,15 @@ rm -f /root/ipsec.sh
 rm -f /root/set-br.sh
 echo "1.1" > /home/ver
 
-echo "echo '                Dibina oleh CTechDidik             '" >> .profile
+echo "echo '                Dibuat oleh ZET TV                   '" >> .profile
 echo "echo ''" >> .profile
-echo "echo '                 Youtube: CTech Didik              '" >> .profile
-echo "echo '     Telegram Channel: https://t.me/ctechdidik     '" >> .profile
+echo "echo '                 Youtube: ZET TV                     '" >> .profile
+echo "echo '     Telegram Channel: https://t.me/ZETNIA           '" >> .profile
 echo "echo ''" >> .profile
-echo "echo '              Raw Script oleh @sam_sfx             '" >> .profile
-echo "echo '             Menu Style oleh @kedairare            '" >> .profile
 echo "echo ''" >> .profile
-echo "echo '       Sila Type: 'menu', untuk ke menu utama      '" >> .profile
+echo "echo '       Silahkan Ketik: 'menu', untuk ke menu utama   '" >> .profile
 echo "echo ''" >> .profile
-echo "echo '    Sila Type: 'info', untuk melihat info skrip    '" >> .profile
+echo "echo '    Silahkan Ketik: 'info', untuk melihat info skrip '" >> .profile
 echo "echo ''" >> .profile
 clear
 echo " "
@@ -137,14 +135,12 @@ echo "   - White Label" | tee -a log-install.txt
 echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo ""
-echo "   - 1st Dev/Main            : CTechDidik"  | tee -a log-install.txt
-echo "   - 1st Dev/Youtube         : CTech Didik -Subscribe Now!"  | tee -a log-install.txt
-echo "   - 2nd Dev/ Telegram       : @sam_sfx"  | tee -a log-install.txt
-echo "   - Menu Dev/ Telegram      : @kedairare"  | tee -a log-install.txt
+echo "   - 1st Dev/Main            : ZET TV"  | tee -a log-install.txt
+echo "   - 1st Dev/Youtube         : ZET TV -Subscribe Now!"  | tee -a log-install.txt
+echo "   - 2nd Dev/ Telegram       : @ZETNIA"  | tee -a log-install.txt
 echo ""
-echo "                         Haram Untuk Dijual                                 " | tee -a log-install.txt
-echo "                       Siapa beli, dia kena scam                            " | tee -a log-install.txt
-echo "------------------Script Created By CTechDidik & SamVPN---------------------" | tee -a log-install.txt
+echo "                         SCRIPT GRATIS                               " | tee -a log-install.txt
+echo "------------------------Script Created By ZET TV---------------------" | tee -a log-install.txt
 
 sleep 3
 echo '============================================='
