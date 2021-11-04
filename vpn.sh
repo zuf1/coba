@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# By CTechDidik
+# By ZET TV
 # ==================================================
 
 # initialisasi var

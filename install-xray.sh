@@ -1,6 +1,6 @@
 #!/bin/bash
 # XRay Installation
-# Coded By ctechdidik
+# Coded By ZET TV
 # ==================================
 
 # // Update & Installing Requirement
