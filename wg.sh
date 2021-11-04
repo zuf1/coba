@@ -2,7 +2,7 @@
 # Debian 9 & 10 64bit
 # Ubuntu 18.04 & 20.04 bit
 # Centos 7 & 8 64bit 
-# By CTechDidik
+# By ZET TV
 # ==================================================
 
 
@@ -23,7 +23,7 @@ if [[ -e /etc/wireguard/params ]]; then
 	exit 1
 fi
 
-echo -e "${Info} Wireguard VPS AutoScript by CTech Didik"
+echo -e "${Info} Wireguard VPS AutoScript by ZET TV"
 # Detect public IPv4 address and pre-fill for the user
 
 # Detect public interface and pre-fill for the user
@@ -89,10 +89,10 @@ WG_RUNNING=$?
 
 # Tambahan
 cd /usr/bin
-wget -O add-wg "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/add-wg.sh"
-wget -O del-wg "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/del-wg.sh"
-wget -O cek-wg "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/cek-wg.sh"
-wget -O renew-wg "https://raw.githubusercontent.com/muhamadparizan/ahahk/main/renew-wg.sh"
+wget -O add-wg "https://raw.githubusercontent.com/zuf1/coba/main/add-wg.sh"
+wget -O del-wg "https://raw.githubusercontent.com/zuf1/coba/main/del-wg.sh"
+wget -O cek-wg "https://raw.githubusercontent.com/zuf1/coba/main/cek-wg.sh"
+wget -O renew-wg "https://raw.githubusercontent.com/zuf1/coba/main/renew-wg.sh"
 chmod +x add-wg
 chmod +x del-wg
 chmod +x cek-wg
