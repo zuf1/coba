@@ -62,5 +62,5 @@ listClients(){
 }
 listClients
 echo "-------------------------------";
-echo -e "Script By SAMVPN"
+echo -e "Script By ZET TV"
 
