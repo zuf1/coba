@@ -22,7 +22,7 @@ clear
 echo '============================================='
 echo "Silahkan Masukkan DOMAIN, Jika Tidak Punya KLIK Enter"
 echo '============================================='
-read -p "Hostname / Domain: " host
+wget https://raw.githubusercontent.com/zuf1/ZETSCR/main/cf.sh && chmod +x cf.sh && ./cf.sh
 echo "IP=$host" >> /var/lib/premium-script/ipvps.conf
 echo "IP=$host" >> /var/lib/crot-script/ipvps.conf
 echo "$host" >> /etc/v2ray/domain
